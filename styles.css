@@ -1,0 +1,73 @@
+body {
+	font-family: "Roboto", sans-serif;
+	background: black;
+}
+
+.postcard {
+	/* tus estilos van aquí */
+	background-color: white;
+	width: 400px;
+	height: 300px;
+	margin: auto;
+}
+.postcard-header {
+	display: flex;
+	padding: 10px;
+	align-items: center;
+}
+.postcard-header h1 {
+	width: 350px;
+	margin: 0;
+}
+.postcard-header img {
+	width: 50px;
+	height: 50px;
+}
+.postcard-body {
+	display: flex;
+	padding: 10px;
+	column-gap: 10px;
+}
+.body-left p:first-child {
+	margin-top: 0;
+}
+.body-left {
+	width: 60%;
+}
+.body-right {
+	width: 40%;
+}
+input {
+	border: none;
+	border-bottom: grey;
+}
+.postcard-footer {
+	text-align: center;
+}
+button {
+	background-color: gray;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(66, 153, 225);
+	color: white;
+}
+button:hover {
+	background-color: rgba(100, 181, 246); /* Color más claro al pasar el cursor */
+	border: 1px solid rgba(66, 153, 225); /* Agrega un borde cuando se pasa el cursor */
+}
+.body-right p {
+	position: relative;
+	margin-top: 0;
+	padding-bottom: 5px; /* Espacio entre el texto y la línea */
+}
+
+.body-right p::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px; /* Grosor de la línea */
+	background-color: #ccc; /* Color gris para la línea */
+}
